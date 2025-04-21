@@ -1,30 +1,34 @@
 import React from 'react';
 import { Github, Mail, MapPin, Linkedin } from 'lucide-react';
+import { handleContactClick, handleGitHubClick } from './buttonHandlers.ts';
+
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gradient-to-r from-gray-900 to-black-900 text-white">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-gray-900 to-green-900 text-white">
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <img 
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&h=400&fit=crop"
+              src="/src/yo.jpg"
               alt="Profile placeholder"
-              className="w-48 h-48 rounded-full object-cover border-4 border-green-700"
+              className="w-48 h-48 rounded-full object-cover border-4 border-black-000"
             />
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4">Emiliano Vega</h1>
-              <p className="text-xl md:text-2xl text-green-400 mb-4">Desarrollador y Especialista en IA</p>
+              <p className="text-xl md:text-2xl text-green-400 mb-4">Desarrollador de Software</p>
               <div className="flex gap-4">
-                <a href="mailto:vemiliano220@gmail.com" className="bg-green-700 hover:bg-green-600 px-6 py-2 rounded-full flex items-center gap-2">
+                <a href="https://www.instagram.com/emii.vvega/" className="bg-green-700 hover:bg-green-600 px-6 py-2 rounded-full flex items-center gap-2">
                   <Mail size={20} />
-                  Contactar
+                  Instagram
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="bg-gray-700 hover:bg-gray-600 px-6 py-2 rounded-full flex items-center gap-2">
+                <a href="https://github.com/EmilianoVega2023" target="_blank" rel="noopener noreferrer" className="bg-gray-700 hover:bg-gray-600 px-6 py-2 rounded-full flex items-center gap-2">
                   <Github size={20} />
                   GitHub
                 </a>
+                <div className="flex gap-4">
+              </div>
               </div>
             </div>
           </div>
@@ -32,10 +36,10 @@ function App() {
       </div>
 
       {/* About Section */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-15 py-20">
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-6 text-gray-800">Sobre Mí</h2>
+          <div className="bg-white p-8 rounded-lg shadow-lg ">
+            <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">Sobre Mí</h2>
             <p className="text-gray-600 leading-relaxed">
               Soy un profesional con una sólida formación en tecnología y atención al cliente. 
               Actualmente estudio una tecnicatura en Inteligencia Artificial. Me destaco por 
@@ -71,10 +75,10 @@ function App() {
       </div>
 
       {/* Experience Section */}
-      <div className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Experiencia Laboral</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+      <div className="py-16">
+        <div className="container mx-auto px-4 bg-white p-8 rounded-lg shadow-lg">
+          <h2 className="text-3xl font-bold text-center mb-4 text-gray-900">Experiencia Laboral</h2>
+          <div className="grid md:grid-cols-3 gap-8 bg-gray-100 p-4 rounded-lg">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-bold text-green-800 mb-2">Runner</h3>
               <p className="text-gray-600 mb-4">Porter - 1992 (2023/2024)</p>
@@ -123,7 +127,7 @@ function App() {
             </div>
             <div className="flex items-center gap-3 text-gray-600">
               <Linkedin size={20} className="text-green-700" />
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-700">
+              <a href="https://www.linkedin.com/in/emiliano-vega-030120249/" target="_blank" rel="noopener noreferrer" className="hover:text-green-700">
                 LinkedIn
               </a>
             </div>
