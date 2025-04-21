@@ -11,7 +11,7 @@ function App() {
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <img 
-              src="/src/yo.jpg"
+              src="/src/yo2.jpg"
               alt="Profile placeholder"
               className="w-48 h-48 rounded-full object-cover border-4 border-black-000"
             />
@@ -21,7 +21,7 @@ function App() {
               <div className="flex gap-4">
                 <a href="https://www.instagram.com/emii.vvega/" className="bg-green-700 hover:bg-green-600 px-6 py-2 rounded-full flex items-center gap-2">
                   <Mail size={20} />
-                  Instagram
+                  Contacto
                 </a>
                 <a href="https://github.com/EmilianoVega2023" target="_blank" rel="noopener noreferrer" className="bg-gray-700 hover:bg-gray-600 px-6 py-2 rounded-full flex items-center gap-2">
                   <Github size={20} />
